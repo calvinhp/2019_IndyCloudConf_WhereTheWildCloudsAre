@@ -10,8 +10,6 @@ tmp/**
 node_modules/
 .sass-cache
 CONTRIBUTING.md
-LICENSE
-README.md
 bower.json
 css/
 gruntfile.js

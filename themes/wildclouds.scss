@@ -50,8 +50,12 @@ $linkColor: $blue;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $magenta;
 
-.backgrounds {
+.slide-background {
     filter: grayscale(50%) opacity(20%) blur(2px);
+
+    &.original {
+        filter: none;
+    }
 }
 
 

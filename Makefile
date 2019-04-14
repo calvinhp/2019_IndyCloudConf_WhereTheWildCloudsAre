@@ -1,10 +1,11 @@
 .PHONY: clean start index.html
 
-slide-theme := wildclouds
+slide-theme := wildclouds_white
 
 index.html: slides.md js/reveal.js css/theme/$(slide-theme).css
 	pandoc -t revealjs -s -V revealjs-url=. \
 		-V theme=$(slide-theme) \
+		-V autoPlayMedia=false \
 		-o "$@" "$<"
 
 js/reveal.js:
